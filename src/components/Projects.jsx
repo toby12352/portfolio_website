@@ -16,8 +16,8 @@ const colors = [
 export const projects = [
   {
     title: "Portfolio Website",
-    url: "https://github.com/hlahtoo/portfolio-v2",
-    image: "projects/Portfolio.png",
+    url: "https://github.com/toby12352/portfolio_website",
+    image: "projects/personal_website.png",
     languages_tools: ["#React", "#React-three", "#Tailwind", "#Gsap"],
     description:
       "A dynamic 3D portfolio website showcasing my work with immersive visuals, styling, and smooth animations",
