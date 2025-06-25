@@ -17,7 +17,8 @@ export function Avatar(props) {
   });
 
   const group = useRef();
-  const { scene } = useGLTF("/models/hh-avatar.glb");
+  // const { scene } = useGLTF("/models/hh-avatar.glb");
+  const { scene } = useGLTF("/models/toby-avatar.glb");
   const clone = React.useMemo(() => SkeletonUtils.clone(scene), [scene]);
   const { nodes, materials } = useGraph(clone);
 
@@ -72,12 +73,12 @@ export function Avatar(props) {
           material={materials.Wolf3D_Hair}
           skeleton={nodes.Wolf3D_Hair.skeleton}
         />
-        <skinnedMesh
+        {/* <skinnedMesh
           frustumCulled={false}
           geometry={nodes.Wolf3D_Glasses.geometry}
           material={materials.Wolf3D_Glasses}
           skeleton={nodes.Wolf3D_Glasses.skeleton}
-        />
+        /> */}
         <skinnedMesh
           frustumCulled={false}
           geometry={nodes.Wolf3D_Outfit_Top.geometry}
@@ -143,7 +144,8 @@ export function Avatar(props) {
   );
 }
 
-useGLTF.preload("/models/hh-avatar.glb");
+// useGLTF.preload("/models/hh-avatar.glb");
+useGLTF.preload("/models/toby_avatar.glb");
 useFBX.preload("animations/Typing.fbx");
 useFBX.preload("animations/Standing_idle.fbx");
 useFBX.preload("animations/Falling_idle.fbx");
