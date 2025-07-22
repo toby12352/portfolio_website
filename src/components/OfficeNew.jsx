@@ -107,9 +107,9 @@ const buttonSounds = {
 
 // 🌐 Social Links
 const socialLinks = {
-  GitHub: "https://github.com/hlahtoo",
-  YouTube: "https://www.youtube.com/@HlaHtoo-wk5ng",
-  Twitter: "https://www.linkedin.com/in/hlahtoo/",
+  GitHub: "https://github.com/toby12352",
+  // YouTube: "",
+  Twitter: "https://www.linkedin.com/in/tobythaung/",
 };
 
 function playHoverAnimation(object, isHovering) {
